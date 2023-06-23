@@ -1,0 +1,50 @@
+.cart-window {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+}
+
+.card {
+  background-color: #fff;
+  width: 16rem;
+  border-radius: 10px;
+  box-shadow: 1px 0 12px #00000036;
+  position: absolute;
+  right: 3rem;
+  top: 5rem;
+  min-height: 8rem;
+  max-height: 17rem;
+  overflow-x: hidden;
+  overflow: scroll;
+}
+
+.card::-webkit-scrollbar {
+  display: none;
+}
+
+.card header {
+  font-size: 0.5rem;
+  padding-left: 1rem;
+  border-bottom: 2px solid hsla(220, 14%, 75%, 0.523);
+}
+
+.card main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 5rem;
+}
+
+.card h2 {
+  font-size: 0.9rem;
+  color: hsl(220, 14%, 75%);
+}
+.card ul {
+  padding: 0;
+  width: 97%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}

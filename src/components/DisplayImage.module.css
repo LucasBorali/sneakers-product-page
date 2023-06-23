@@ -1,0 +1,42 @@
+.display-image {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background: #00000092;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.display-image div {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 35rem;
+}
+
+.display-image img {
+  width: 35rem;
+  border-radius: 10px;
+}
+
+.display-image button {
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer;
+  right: 0.5rem;
+  top: 0.5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.2s ease;
+  padding: 0.8rem;
+}
+
+.display-image button:hover {
+  background-color: #0000005b;
+}

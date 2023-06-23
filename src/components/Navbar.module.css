@@ -1,0 +1,40 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+    height: 10vh;
+    border-bottom: 3px solid hsla(220, 14%, 75%, 0.637);
+    margin: 0 2rem;
+}
+
+.navbar div {
+    display: flex;
+    align-items: center;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 1rem;
+}
+
+.navbar li {
+    list-style: none;
+    padding: 5px 2px;
+    transition: 0.2s ease;
+}
+
+.navbar li:hover {
+    border-bottom: 1px solid hsl(26, 100%, 55%);
+    padding: 0px 2px;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: hsl(219, 9%, 45%);
+}
+
+.profile {
+    width: 50px;
+    margin-left: 2rem;
+}
