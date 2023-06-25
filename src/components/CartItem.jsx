@@ -2,7 +2,11 @@ import React from 'react';
 import classes from './CartItem.module.css';
 import { icons } from '../Assets/constant';
 
-const CartItem = ({ cart }) => {
+const CartItem = ({ cart, onRemoveItem }) => {
+  const removeItemHandler = function() {
+    onRemoveItem(cart)
+  }
+
   return (
     <li className={classes['list-item']}>
       <img className={classes.image} src={cart.image} alt="product" />
@@ -15,7 +19,7 @@ const CartItem = ({ cart }) => {
           )}`}</span>
         </p>
       </div>
-      <button>
+      <button onClick={removeItemHandler}>
         <img src={icons.iconDelete} alt="delete button" />
       </button>
     </li>

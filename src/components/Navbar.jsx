@@ -3,7 +3,7 @@ import { others } from '../Assets/constant';
 import classes from './Navbar.module.css'
 import Cart from './Cart';
 
-const Navbar = ({cart}) => {
+const Navbar = ({cart, setAddToCart}) => {
   
   return (
     <div className={classes.navbar} >
@@ -22,7 +22,7 @@ const Navbar = ({cart}) => {
         </div>
         </div>
         <div>
-            <Cart cart={cart} />
+            <Cart cart={cart} setAddToCart={setAddToCart}/>
             <img className={classes.profile} src={others.avatarImage} />
         </div>
     </div>

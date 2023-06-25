@@ -8,7 +8,7 @@ function App() {
   
   return (
     <div>
-      <Navbar cart={addToCart} />
+      <Navbar cart={addToCart} setAddToCart={setAddToCart} />
       <ProductContent product={product} setAddToCart={setAddToCart} />
     </div>
   );

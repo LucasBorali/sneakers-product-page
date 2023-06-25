@@ -5,7 +5,7 @@ import ReactDOM from 'react-dom';
 import CartWindow from './CartWindow';
 import { useState } from 'react';
 
-const Cart = ({cart}) => {
+const Cart = ({cart, setAddToCart}) => {
   
   const [displayWindow, setDisplayWindow] = useState(false);
 
@@ -22,7 +22,7 @@ const Cart = ({cart}) => {
       </button>
       {displayWindow &&
         ReactDOM.createPortal(
-          <CartWindow cart={cart} setDisplayWindow={setDisplayWindow} />,
+          <CartWindow cart={cart} setAddToCart={setAddToCart} setDisplayWindow={setDisplayWindow} />,
           document.getElementById('window-root')
         )}
     </div>
