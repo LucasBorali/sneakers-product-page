@@ -37,7 +37,7 @@ const ProductDescription = ({product, setAddToCart}) => {
       <h1>{product.name}</h1>
       <p>{product.description}</p>
       <div>
-        <div>
+        
           <div className={classes.discount}>
             <h3>{`$${( productQuantity * (product.price * discount)).toFixed(2)}`}</h3>
             <p>{`${discount * 100}%`}</p>
@@ -45,7 +45,7 @@ const ProductDescription = ({product, setAddToCart}) => {
               <p>{`$${product.price.toFixed(2)}`}</p>
             </div>
           </div>
-        </div>
+        
         <div className={classes.buying}>
           <div>
             <button onClick={minusHandler}>

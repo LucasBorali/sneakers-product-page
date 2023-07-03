@@ -49,6 +49,30 @@
     border-radius: 10px;
 }
 
-/* .selected {
-    border: 2px solid hsl(26, 100%, 55%);
-} */
+@media (max-width: 500px) {
+    .product-content {
+        width: 100vw;
+        height: auto;
+        margin: 0;
+        display: block;
+    }
+
+    .product-display {
+        width: 100vw;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-color: red;
+    }
+    .product-content ul {
+        display: none;
+    }
+
+    .big-panel {
+        width: 100vw;
+        border-radius: 0;
+       
+    }
+}
